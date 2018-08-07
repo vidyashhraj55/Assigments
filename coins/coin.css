@@ -1,0 +1,25 @@
+body{
+    margin: 0 auto;
+    background-color:aqua;
+    display: flex;
+    justify-content:center;
+
+}
+header{
+    padding-bottom: 10px;
+    text-align: center;
+}
+#div{
+    border:3px solid black;
+    display: flex;
+    justify-content:center;
+    padding:10px;
+    
+    
+}
+#amm
+{
+    color: red;
+    font-size: 20px;
+}
+

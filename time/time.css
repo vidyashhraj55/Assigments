@@ -1,0 +1,47 @@
+body{
+	margin: 0 auto;
+	background-image: url("clock-3179167__340.jpg");
+	height: 600px;
+	width: 300px;
+	background-size: 100%;
+}
+
+.layout {
+	justify-content: center;
+	border: 1px solid black;
+	align-content: center;
+	border-radius: 10px;
+	box-shadow: 10px;
+	background-color: 
+	-webkit-transition: width 2s, height 4s;
+	transition: width 2s, height 4s;
+}
+.layout:hover {
+    width: 300px;
+    height: 300px;
+}
+
+#btn {
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;  
+	border-radius: 8px;
+	border: none;
+	background-color: blue;
+	margin-left: 100px;
+	text-align: center; 
+}
+
+#res {
+	margin-left: 60px;
+	margin-top: 30px;
+	margin-bottom:30px;
+}
+
+p {
+	text-align: center;
+	font-size: 50;
+	font-weight: bold;
+	color: red;
+}

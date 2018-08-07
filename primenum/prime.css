@@ -1,0 +1,48 @@
+body {
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 32px;
+font-family: 'Hanalei Fill', cursive;
+background-image: url("download.jpeg");
+background-size: 100%;
+}
+#div1 {
+/*background:linear-gradient(to right,red,white);*/
+background-image: url("download.jpeg");
+background-size: 100%;
+color: white; 
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+border: 1px solid #d9d9d9;
+border-radius: 100px;
+box-shadow: 6px 2px 14px 0px #d9d9d9;
+max-width: 400px;
+width: 400px;
+max-height: 400px;
+height: 400px;
+}
+#div1{
+padding: 23px;
+}
+#div1 {
+margin: 12px;
+}
+#name1,#pass1 {
+	color: red;
+	font: 13px;
+}
+#btn{
+  background-color:pink;
+  border-radius: 10px;
+  margin:15px;
+  height: :10px;
+  width: 100px;
+  padding: 10px;
+}
+#p{
+	color:red;
+}

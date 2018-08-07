@@ -1,0 +1,24 @@
+body{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(Rock-Music-Wallpapers-24.jpg);
+
+}
+.audio{
+	border: 1px solid black;
+	height: 300px;
+	/* inherit,initial */
+	width: 300px;
+	background-image: url(free-hd-music-backgrounds-powerpoint-wallpapers-download.jpg);
+	align-content: center;
+	
+}
+#ring1{
+	background-color: red;
+}
+#ring{
+	background-color: pink;
+
+}
