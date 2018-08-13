@@ -1,0 +1,13 @@
+<div class="cal">
+    <h1 class="app">CalApp</h1>
+<input class="res" [(ngModel)]='num1' type="number" name="num1" placeholder="enter the number1"/><br>
+<input  class="res" [(ngModel)]='num2' type="number" name="num2" placeholder="enter the number2"/>
+<br>
+
+<button id="btn" (click)='cal_add()'>add</button>
+<button  id="btn"  (click)='cal_sub()'>sub</button><br>
+<button  id="btn" (click)='cal_mul()'>mul</button>
+<button  id="btn" (click)='cal_div()'>div</button>
+
+<h1 class="res1">{{result}}</h1>
+</div>

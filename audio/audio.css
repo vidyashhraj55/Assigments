@@ -8,10 +8,9 @@ body{
 }
 .audio{
 	border: 1px solid black;
-	height: 300px;
+	
 	/* inherit,initial */
-	width: 300px;
-	background-image: url(free-hd-music-backgrounds-powerpoint-wallpapers-download.jpg);
+	
 	align-content: center;
 	
 }

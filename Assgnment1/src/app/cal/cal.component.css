@@ -1,0 +1,30 @@
+.cal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-left:400px;
+    margin-right: 400px;
+    width: 500px;
+    height: 450px;
+    background-color: darkgray;
+}
+.res{
+      background-color:darkslategrey; 
+      padding: 10px;
+      color:red;
+      font-size: 15px;
+      
+   
+}
+#btn
+{
+border-radius: 3px; 
+background-color: aqua;
+
+}
+.res1{
+    align-items: center;
+    color:red;
+}
