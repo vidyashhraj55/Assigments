@@ -1,0 +1,56 @@
+<div class="header" >
+    <mat-toolbar color="accent">
+        KALPATARU INSTITUTE OF TECHNOLOGY
+        </mat-toolbar>
+  </div>
+<div class="res">
+<form [formGroup]="form" class="example-form" >
+  <h1 class="head">Personal Details</h1>
+  <!-- <mat-form-field class="example-full-width">
+    <input  matInput disabled value="KIT">
+  </mat-form-field> -->
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input formControlName="firstname"  matInput placeholder="First name" >
+    
+   </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input formControlName="lastname"  matInput placeholder="last name" >
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+    <mat-form-field class="example-full-width">
+      <textarea formControlName="address"  matInput placeholder="Address"></textarea>
+    </mat-form-field>
+
+  </p>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <mat-select formControlName="city" matInput placeholder="City" >
+      <mat-option *ngFor="let c of citys" [value]="c.value">
+          {{c.viewValue}}
+        </mat-option>
+        </mat-select>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <mat-select formControlName="state" matInput placeholder="State" value={{state}}>
+   
+          <mat-option *ngFor="let s of states" [value]="s.value">
+              {{s.viewValue}}
+            </mat-option>   </mat-select> </mat-form-field>
+  </td>
+  </tr>
+<br>
+<mat-radio-group formControlName="gender" class="radio">
+    <mat-radio-button value="1">Male</mat-radio-button>
+    <mat-radio-button value="2">Female</mat-radio-button>
+    <mat-radio-button value="3">others</mat-radio-button>
+  </mat-radio-group>
+<br><br></table>
+  
+  <button class="btn" mat-flat-button  color="accent"  (click)="onNavigateForward()">next</button>
+</form>
+</div>

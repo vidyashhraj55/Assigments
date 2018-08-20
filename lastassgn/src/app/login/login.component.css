@@ -1,0 +1,33 @@
+.res{
+    margin-left:400px;
+    margin-right:100px;
+    margin-top:50px;
+    box-shadow: 1px 2px 3px 3px;
+    width:600px;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:powderblue;
+}
+.btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+}
+.head{
+    margin-left:100px;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .radio{
+    margin-left:100px;
+}
