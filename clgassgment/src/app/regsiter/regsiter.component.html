@@ -1,0 +1,28 @@
+<mat-toolbar color="accent">
+    KALPATARU INSTITUTE OF TECHNOLOGY
+    </mat-toolbar>
+<div class="res">
+   
+<form [formGroup]="form1" class="example-form">
+    <!-- <mat-form-field class="example-full-width">
+      <input matInput disabled value="academic details">
+    </mat-form-field> -->
+  <h1>Academic Details</h1>
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <input formControlName="tenthmarks"  type="text" matInput placeholder="tenth marks" >
+      </mat-form-field></td></tr>
+     <tr><td><mat-form-field class="example-full-width">
+        <input  formControlName="puc" matInput placeholder="PUC marks" >
+      </mat-form-field></td>
+    </tr>
+
+    <tr><td><mat-checkbox value="1" formControlName="degree"  class="box">Graduate</mat-checkbox>
+    <mat-checkbox  value="2" formControlName="postdegree"  class="box">PostGraduate</mat-checkbox></td></tr>
+    
+    <br>
+    <button class="btn" mat-flat-button  color="accent"  (click)="onNavigateBehind()">previous</button>
+    
+  </table>
+  </form>
+</div>
