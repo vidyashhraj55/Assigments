@@ -1,0 +1,22 @@
+.create-form {
+    min-width: 100px;
+    width: 80%;
+}
+
+.field-full-width {
+    width: 100%;
+}
+.label{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-display: inherit;
+    font-style: oblique;
+   margin-left:200px;
+   /* margin-top:400px; */
+}
+.mat-typography{
+    width:700px;
+    margin-top:50px;
+    margin-left:300px;
+    background-color:darkgrey;
+}

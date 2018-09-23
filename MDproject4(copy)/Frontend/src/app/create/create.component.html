@@ -1,0 +1,49 @@
+<div>
+  <br>
+  
+  <mat-card class="mat-typography">
+      <label class="label">EMPLOYEE FORM</label>
+    <section class="mat-typography">
+      <!-- <h3>Create A New Issue</h3> -->
+    </section>
+    <mat-divider></mat-divider>
+    <br>
+    <form [formGroup]="createForm" class="create-form">
+      
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="enter name" formControlName="name" #name>
+        <!-- <mat-error *ngIf="createForm.controls['name'].errors.required">
+          name is <strong>required</strong>
+        </mat-error> -->
+      </mat-form-field>
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="enter email" formControlName="email" #email>
+        <!-- <mat-error *ngIf="createForm.controls['email'].errors.required">
+          email is <strong>required</strong>
+        </mat-error> -->
+      </mat-form-field>
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="enter branch" formControlName="branch" #branch>
+        <!-- <mat-error *ngIf="createForm.controls['branch'].errors.required">
+          please enter <strong>branch</strong>
+          </mat-error> -->
+      </mat-form-field>
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="enter tech" formControlName="tech" #tech>
+        <!-- <mat-error *ngIf="createForm.controls['tech'].errors.required">
+          please enter <strong>technology</strong>
+          </mat-error> -->
+      </mat-form-field >
+      <mat-divider></mat-divider>
+      <!-- <button class="btn">Upload a file</button> -->
+      <input size="60" type="file" (change)="onFileChanged($event)" formControlName="productImage" #productImage>
+      <br><br>
+
+      <button mat-raised-button color="accent" routerLink="/list">View</button>&nbsp;
+      <button type="submit" (click)="addIssue()" [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Save</button>
+    </form>
+  </mat-card>
+  <!-- <h1>File upload</h1>
+  <input type="file" name="productImage" (change)="onFileSected($event)">
+   <button type="button" (click)="addIssue()">upload</button> -->
+<!-- </div> -->

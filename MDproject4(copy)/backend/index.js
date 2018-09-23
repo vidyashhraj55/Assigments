@@ -1,0 +1,24 @@
+const express= require("express");
+const app=express();
+const mongoose=require("mongoose");
+const morgan=require("morgan");
+require('dotenv').config()
+app.use(express.json());
+const cors=require('cors');
+app.use(cors());
+mongoose.connect(process.env.DB_URL,{useNewUrlParser: true},(err)=>{
+    if(err)
+     console.log("error");
+    else
+    console.log("success");
+});
+app.use(morgan("dev"));
+app.use('/uploads',express.static('uploads'));
+const product=require('./routers/router');
+app.use('/product',product);
+app.get('/',(req,res)=>{
+    res.send("WELCOME TO NODE");
+
+})
+PORT=process.env.PORT;
+app.listen(PORT,()=>console.log(`AT ${PORT} port is running`));

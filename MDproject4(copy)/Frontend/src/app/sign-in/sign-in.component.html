@@ -1,0 +1,17 @@
+ <div class="example-container">
+    <label class="label">Login Form</label>
+                    <mat-form-field  class="input">
+                    <input matInput placeholder="email" [formControl]="email"  [(ngModel)]="loginUserData.email" name="email" required>
+                      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    </mat-form-field><br>
+                 
+              <!-- <input type="text" class="form-control rounded-0" [(ngModel)]="loginUserData.email" name="email" required> -->
+          
+              <mat-form-field class="input1">
+                <input matInput placeholder="password"  [formControl]="password"type="password" [(ngModel)]="loginUserData.password" name="password">
+              
+              </mat-form-field>
+            <button mat-flat-button color="primary" type="button" (click)="loginUser()" class="btn-success">Login</button>&nbsp;&nbsp;
+            <button mat-flat-button color="primary" type="button" (click)="Register()" >Register</button>
+          <br> <br><div style="color:red;margin-left: 200px" >{{mes}}</div>
+    </div>
