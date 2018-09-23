@@ -1,0 +1,13 @@
+
+<div class="example-container">
+    <label class="label">Register Form</label>
+    <mat-form-field  class="input">
+              <input  matInput placeholder="email" [formControl]="email" type="text" [(ngModel)]="registerUserData.email" name="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field><br>
+           
+                <mat-form-field class="input1">
+              <input matInput placeholder="password"type="password" [formControl]="password" [(ngModel)]="registerUserData.password" name="password" class="form-control rounded-0"  required>
+                </mat-form-field>
+            <button mat-flat-button color="primary" type="button" (click)="registerUser()"class="btn-success">Register</button>
+          </div>

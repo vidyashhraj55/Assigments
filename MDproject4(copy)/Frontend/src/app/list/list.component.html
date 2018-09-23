@@ -1,0 +1,49 @@
+<div class="raj">
+  <br>
+  <mat-card class="abc">
+    <button mat-raised-button color="primary" routerLink="/create">Add new employee</button>
+    <br><br>
+    <mat-divider></mat-divider>
+    <br>
+    <mat-form-field>
+        <input class="branchfilter" matInput type="text" [(ngModel)]="userFilter.name" placeholder="name"> </mat-form-field> &nbsp;
+        <mat-form-field>
+        <input class="branchfilter1" matInput type="text" [(ngModel)]="userFilter1.branch" placeholder="location">
+        </mat-form-field>
+        <!-- <input type="text" [(ngModel)]="userFilter.name" placeholder="name">   -->
+    <div >
+      <table>
+      <tr>
+      <th>ContactImage</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Branch</th>
+      <th>Tech</th>
+      <th>Actions</th>
+      </tr>
+      <tr *ngFor="let x of response | orderBy:order |filterBy:userFilter |filterBy:userFilter1| paginate: { itemsPerPage: 5, currentPage: p }" class="mat-column-right" >
+          <td ><img [src]="imgUrl+x.productImage" alt="image cation" width="100px" height="100px"></td>
+      <td> {{x.name}}</td>
+      <td >{{x.email}}</td>
+      <td >{{x.branch}}</td>
+      <td >{{x.tech}}</td>
+      <mat-divider></mat-divider>
+      <button style="color:red" mat-button color="primary" (click)="editIssue(x._id)"><mat-icon>edit</mat-icon></button>
+      <button mat-button color="primary" (click)="deleteIssue(x._id)"><mat-icon>delete_outline</mat-icon></button>
+      
+      </tr>
+      </table>
+      </div>
+<!--       
+          <button mat-button color="primary" (click)="editIssue(element._id)">Edit</button>
+          <button mat-button color="warn" (click)="deleteIssue(element._id)">Delete</button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
+
+    <!-- </table> -->
+    <pagination-controls (pageChange)="p=$event"></pagination-controls><div class="page"></div>
+  </mat-card>
+</div>

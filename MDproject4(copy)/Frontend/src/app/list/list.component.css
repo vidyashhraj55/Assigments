@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+}
+
+.mat-column-right {
+    text-align: center;
+}
+.abc{
+    background-color:darkgrey;
+    height: 100%;
+    width:800px;
+    margin-top:50px;
+    margin-left:300px;
+}
